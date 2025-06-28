@@ -344,7 +344,32 @@
         .emoji {
             font-size: 1.2rem;
         }
+        .profile-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
 
+        .profile-link-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .profile-link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+        }
         @media (max-width: 768px) {
             .content {
                 grid-template-columns: 1fr;
@@ -428,13 +453,27 @@
                     <div>선호하는 포지션</div>
                     <div style="font-weight: 700; margin-top: 5px;">풀스택 · PM</div>
                 </div>
+
+                <div class="profile-links">
+                    <a href="https://github.com/hks0827" target="_blank" class="profile-link-btn">
+                        <span class="icon">💻</span>
+                        GitHub
+                    </a>
+                    <a href="https://velog.io/@hks_0827/posts" target="_blank" class="profile-link-btn">
+                        <span class="icon">📝</span>
+                        Velog
+                    </a>
+                </div>
+                
             </div>
 
             <div class="info-section">
                 <div class="info-card">
                     <h3><span class="icon">📚</span>1학기 트랙</h3>
-                    <li>Java 전공</li>
-                    <li>5월 이달의 동료</li>
+                    <ul>
+                        <li>Java 전공</li>
+                        <li>5월 이달의 동료</li>
+                    </ul>
                 </div>
 
                 <div class="info-card">
@@ -472,18 +511,7 @@
                         <li>프론트엔드, 백엔드 공부를 병행하면서 각자의 고충 이해와 연결을 잘 합니다.</li>
                         <li>5월 이달의 동료를 수상받았고, 팀의 분위기를 환기시켜주는 역할을 잘 합니다.</li>
                     </ul>
-                </div>
-
-                <div class="links">
-                    <a href="https://github.com/hks0827" target="_blank" class="link-btn">
-                        <span class="icon">💻</span>
-                        GitHub
-                    </a>
-                    <a href="https://velog.io/@hks_0827/posts" target="_blank" class="link-btn">
-                        <span class="icon">📝</span>
-                        Velog
-                    </a>
-                </div>
+                </div
             </div>
         </div>
     </div>
